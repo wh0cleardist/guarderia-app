@@ -1,0 +1,27 @@
+﻿@model GuarderiaApp.Models.Niño
+
+<h2>Crear Niño</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="NumeroMatricula"></label>
+        <input asp-for="NumeroMatricula" class="form-control" />
+        <span asp-validation-for="NumeroMatricula" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaNacimiento"></label>
+        <input asp-for="FechaNacimiento" type="date" class="form-control" />
+        <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaIngreso"></label>
+        <input asp-for="FechaIngreso" type="date" class="form-control" />
+        <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

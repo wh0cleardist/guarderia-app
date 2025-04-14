@@ -13,8 +13,8 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 // Configuración de la pipeline de solicitudes HTTP
-if (app.Environment.IsDevelopment())
-{
+if (app.Environment.IsDevelopment()){
+
     app.UseDeveloperExceptionPage();
 }
 else
@@ -22,6 +22,8 @@ else
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+string x = "Hola"; 
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -32,6 +34,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Niños}/{action=Index}/{id?}"); 
+    pattern: "{controller=Home}/{action=Index}/{id?}"); 
 
 app.Run();

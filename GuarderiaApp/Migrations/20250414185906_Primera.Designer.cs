@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GuarderiaApp.Migrations
 {
     [DbContext(typeof(GuarderiaDbContext))]
-    [Migration("20250401231109_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250414185906_Primera")]
+    partial class Primera
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

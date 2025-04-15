@@ -52,7 +52,7 @@ namespace GuarderiaApp.Controllers
             return View(niño);
         }
 
-        // GET: Niños/Edit/5
+        // GET: Niños/Edit/5 Editar carajitos
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
@@ -63,7 +63,7 @@ namespace GuarderiaApp.Controllers
             return View(niño);
         }
 
-        // POST: Niños/Edit/5
+        // POST: Niños/Edit/5 Editar carajitos
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Niño niño)
@@ -89,7 +89,7 @@ namespace GuarderiaApp.Controllers
             return View(niño);
         }
 
-        // GET: Niños/Delete/5
+        // GET: Niños/Delete/5 Borrar carajitos
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
@@ -100,7 +100,7 @@ namespace GuarderiaApp.Controllers
             return View(niño);
         }
 
-        // POST: Niños/Delete/5
+        // POST: Niños/Delete/5 Borrar carajitos
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
